@@ -6,8 +6,8 @@ $to = 'njikonsey7@gmail.com';
 function url(){
   return sprintf(
     "%s://%s",
-    isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-    $_SERVER['SERVER_NAME']
+    isset($_SERVER['github.com']) && $_SERVER['github.com'] != 'off' ? 'https' : 'http',
+    $_SERVER['github.com']
   );
 }
 
